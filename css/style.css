@@ -1,0 +1,262 @@
+body{
+    text-align: center;
+    font-family: Raleway, 'sans-serif';
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul{
+    margin: 0 auto;
+    display: table;
+}
+.header{
+    font-size: 85px;
+    font-weight: bold;
+}
+
+.newElement{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.view{
+    background: url('../imgs/me.jpg') no-repeat center;
+    background-size:cover;
+    display: block;
+    height: 600px;
+}
+.icon{
+    border-radius: 50%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1049;
+}
+.navbackground{
+    background-color: white;
+}
+.navbackground2{
+    background-color: #28779E;
+}
+.hidden{
+    display: none;
+}
+.show{
+    display: inline-flex;
+}
+.shift{
+    align-content: left;
+}
+.timeline {
+    padding: 50px 0;
+    position: relative;
+}
+.timeline-nodes {
+    padding-bottom: 25px;
+    position: relative;
+}
+.timeline-nodes:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.timeline h3, .timeline h5, .timeline p {
+    padding: 5px 15px;
+}
+.timeline h3{
+    font-weight: lighter;
+}
+.timeline .title{
+    background: #28779E;
+    border-radius:9px 9px 0 0;
+}
+.timeline p, .timeline h5 {
+    color:	#28779E;
+}
+.timeline::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    border-left: 2px dashed #28779E;
+    height: 100%;
+    z-index: 1;
+    transform: translateX(-50%);
+}
+.timeline-content {
+    border: 1px solid 	#28779E;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 3px 25px 0px rgba(10, 55, 90, 0.2)
+}
+.timeline-nodes:nth-child(odd) h3,
+.timeline-nodes:nth-child(odd) h5,
+.timeline-nodes:nth-child(odd) p {
+    text-align: right;
+}
+
+.timeline-nodes:nth-child(even) h3,
+.timeline-nodes:nth-child(even) h5,
+.timeline-nodes:nth-child(even) p {
+    text-align: left;
+}
+
+.timeline-nodes:nth-child(odd) .timeline-content::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 100%;
+    width: 0;
+    border-left: 10px solid #28779E;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.timeline-nodes:nth-child(even) .timeline-content::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 100%;
+    width: 0;
+    border-right: 10px solid #28779E;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.timeline-image {
+    position: relative;
+    z-index: 100;
+}
+.timeline-image::before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    border: 2px dashed 	#28779E;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    z-index: 1;
+
+
+}
+.timeline-image img {
+    position: relative;
+    z-index: 100;
+}
+.portfolio {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+/*Portfolio thumbnails*/
+.portfolio-link img:hover {
+    opacity: 0.9;
+
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+
+}
+
+/*portfolio modal*/
+.portfolio-modal .modal-body {
+    position: static;
+}
+
+/*modal box size*/
+.portfolio-modal .modal-dialog {
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    margin: 0;
+    /*    enable the overflow to set the screen no scrolling*/
+    /*    overflow: hidden;*/
+}
+
+/*content*/
+.portfolio-modal .modal-content {
+    /*the paragraph font color*/
+    color: #746f6f;
+    padding: 0 0 2em 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: left;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    /*the background-color*/
+    background-color: rgba(252, 249, 249, 0.9);
+}
+
+/*project title*/
+.portfolio-modal .modal-content h2 {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-size: 3em;
+}
+
+/*clent, date and service*/
+.portfolio-modal .modal-content .item-details {
+    margin: 2em 0;
+}
+
+
+/*bottom of the modal box including prev, next, back to work*/
+.portfolio-modal .bottom {
+    /*    top right bottom left*/
+    padding: 0 5em 5em 5em;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+/*the X close icon*/
+.portfolio-modal .modal-header .close {
+    font-size: 4em;
+    /*    top right bottom left*/
+    padding: 0 2em 0 0;
+    font-weight: 200;
+    color: #28779E;
+}
+
+.portfolio-modal .modal-header {
+    border-bottom: none;
+}
+
+.portfolio-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
+}
+
+.portfolio-image {
+    width: 500px;
+    height: 500px;
+}
+
+.progress{
+    margin-bottom: 10px;
+}
+
+.card img {
+    margin-top: 20px;
+    height: 300px;
+}
+.card .special img{
+    margin-top: 0px;
+}
+.card h2 {
+    margin-top: 10px;
+}
+
+#aboutMe p {
+    margin-bottom: 10px;
+}

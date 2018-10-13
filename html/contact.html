@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+    <link rel="icon" type="image/x-icon" href="../imgs/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="100" id="body">
+    <div class="header newElement">MICHELLE
+        <a href="index.html">
+            <img src="../imgs/logo.png" style="height: 70px">
+        </a>
+        ZHANG
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light navbackground" id="navbar">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <ul class="navbar-nav" id="tabs">
+                <li class="nav-item">
+                    <a class="nav-link" href="internships.html">Internships</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="leadership.html">Extracurriculars</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact Me<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav hidden" id="socialMedia">
+                <li class="nav-item">
+                    <a class="btn btn-social-icon btn-github" href="https://github.com/michellejjzhang"><span class="fa fa-github"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-social-icon btn-linkedin" href="https://linkedin.com/in/michellejiazhang/"><span class="fa fa-linkedin"></span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container center">
+        <div class="text-center">
+            <h3>Contact Information</h3>
+            <p>
+                62 Seneca Ave<br>
+                Dix Hills NY 11746<br>
+                (631) 848-0401<br>
+            </p>
+        </div>
+
+        <form id="contact-form" method="post" action="../contact.php" role="form">
+            <div>
+                <h4>Feel free to email me by filling out the form</h4>
+            </div>
+            <div class="controls">
+                <div class="row justify-content-md-center">
+                    <div class="form-group col-md-6">
+                        <label for="form_name">Name *</label>
+                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your name *" required="required" data-error="Firstname is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-md-center">
+                    <div class="form-group col-md-6">
+                        <label for="form_email">Email *</label>
+                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-md-center">
+                    <div class="form-group col-md-6">
+                        <label for="form_message">Message *</label>
+                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+
+                <div class="row form-group justify-content-md-center">
+                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
