@@ -198,8 +198,11 @@ ul{
 /*project title*/
 .portfolio-modal .modal-content h2 {
     margin-top: 0px;
-    margin-bottom: 50px;
     font-size: 3em;
+}
+
+.portfolio-modal .modal-content p {
+    margin-top: 20px;
 }
 
 /*clent, date and service*/
