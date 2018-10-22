@@ -19,7 +19,6 @@ ul{
 .newElement{
     display: block;
     margin-top: 20px;
-    margin-bottom: 20px;
 }
 .view{
     background: url('../imgs/me.jpg') no-repeat center;
@@ -151,7 +150,7 @@ ul{
     z-index: 100;
 }
 .portfolio {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -262,4 +261,18 @@ ul{
 
 #aboutMe p {
     margin-bottom: 10px;
+}
+.progress-bar {
+    background-color: #28779E
+}
+
+.resume {
+    background-color: #28779E;
+    color: white;
+}
+.btn {
+    color:#28779E;
+}
+.homepage {
+    padding: 50px;
 }
