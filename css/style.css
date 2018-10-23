@@ -276,3 +276,13 @@ ul{
 .homepage {
     padding: 50px;
 }
+
+.logo img:hover {
+    opacity: 0.9;
+/*
+    -webkit-filter: opacity(50%) brightness(500%);
+    filter:  opacity(50%) brightness(500%);
+    */
+    -webkit-filter: drop-shadow(1px 1px 3px gray);
+    filter: drop-shadow(1px 1px 3px gray);
+}
